@@ -1,6 +1,6 @@
 {
-	"name": "electron-app",
-	"productName": "electron-app",
+	"name": "electron-webpack-gulp",
+	"productName": "electron-webpack-gulp",
 	"description": "Electron-webpack-gulp starter.",
 	"version": "0.0.1",
 	"main": "index.js",
