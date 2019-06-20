@@ -1,0 +1,59 @@
+{
+	"name": "electron-app",
+	"productName": "electron-app",
+	"description": "Electron-webpack-gulp starter.",
+	"version": "0.0.1",
+	"main": "index.js",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/user/repo.git"
+	},
+	"scripts": {
+		"postinstall": "electron-builder install-app-deps",
+		"start": "gulp dev",
+		"build": "gulp build && build --mac",
+		"release": "build --mac --publish always"
+	},
+	"author": "Tom",
+	"license": "GPL-3.0-or-later",
+	"build": {
+		"appId": "com.electron.electron-app",
+		"mac": {
+			"category": "public.app-category.developer-tools",
+			"darkModeSupport": true
+		},
+		"publish": [
+			"github"
+		]
+	},
+	"dependencies": {
+		"electron-context-menu": "^0.12.1",
+		"electron-updater": "^4.0.6",
+		"electron-store": "^3.3.0",
+		"electron-window-state": "^5.0.3"
+	},
+	"devDependencies": {
+		"@babel/core": "^7.4.5",
+		"babel-loader": "^8.0.6",
+		"babel-minify-webpack-plugin": "^0.3.1",
+		"babel-preset-env": "^1.7.0",
+		"electron": "^5.0.4",
+		"electron-builder": "^20.43.0",
+		"electron-log": "^3.0.6",
+		"gulp": "^4.0.2",
+		"gulp-clean-css": "^4.2.0",
+		"gulp-concat": "^2.6.1",
+		"gulp-env": "^0.4.0",
+		"gulp-eslint": "^5.0.0",
+		"gulp-livereload": "^4.0.1",
+		"gulp-run-electron": "^3.0.2",
+		"gulp-sourcemaps": "^2.6.5",
+		"gulp-stylus": "^2.7.0",
+		"ionicons": "^4.5.8",
+		"svelte": "^3.5.1",
+		"svelte-loader": "^2.13.4",
+		"through2": "^3.0.1",
+		"webpack": "^4.34.0",
+		"webpack-stream": "^5.2.1"
+	}
+}
